@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="3846" started-at="2018-06-21T04:51:08Z" finished-at="2018-06-21T04:51:12Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="3846" started-at="2018-06-21T04:51:08Z" finished-at="2018-06-21T04:51:12Z">
+      <class name="chapter06.twotables.PersistTest">
+        <test-method status="PASS" signature="createTables()[pri:0, instance:chapter06.twotables.PersistTest@18be83e4]" name="createTables" duration-ms="3809" started-at="2018-06-21T04:51:08Z" finished-at="2018-06-21T04:51:12Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createTables -->
+      </class> <!-- chapter06.twotables.PersistTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

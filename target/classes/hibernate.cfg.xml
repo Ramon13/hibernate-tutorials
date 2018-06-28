@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE hibernate-configuration PUBLIC
+"-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+
+<hibernate-configuration>
+	<session-factory>
+		<!-- Database Connection Settings -->
+		<property name="connection.driver_class">com.mysql.jdbc.Driver</property>
+		<property name="connection.url">jdbc:mysql://localhost:3306/sql_softblue_course?useSSL=false</property>
+		<property name="connection.username">root</property>
+		<property name="connection.password">Excalibur1209+</property>
+		<property name="dialect">org.hibernate.dialect.MySQL57Dialect</property>
+		
+		<!-- Echo all executed SQL stdout -->
+		<property name="show_sql">true</property>
+		<property name="format_sql">true</property>
+		
+		<!-- Connection polling settings -->
+		<property name="c3p0.timeout">10</property>
+		
+		<!-- Drop and re-create the database scheme on startup -->
+		<property name="hbm2ddl.auto">update</property>
+		<!--  
+		<mapping class="chapter03.simple.Person"/>
+		<mapping class="chapter03.simple.Skill"/>
+		<mapping class="chapter03.simple.Ranking"/>
+		
+		<mapping class="chapter04.mapped.Message"/>
+		<mapping class="chapter04.mapped.Email"/>
+		<mapping class="chapter04.model.SimpleObject"/>
+		
+		<mapping class="chapter04.orphan.Book"/>
+		<mapping class="chapter04.orphan.Library"/>
+		-->
+		<mapping class="chapter06.twotables.Customer"/>
+		<mapping class="chapter06.twotables.Employee"/>
+		
+	</session-factory>
+</hibernate-configuration>
